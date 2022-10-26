@@ -2,10 +2,11 @@ from tkinter import Tk, Radiobutton, Label, StringVar
 from flash_card import FlashCardsWindow
 
 languages = [
-    ("Italian", "italian"),
-    ("French", "french"),
-    ("German", "german"),
-    ("Spanish", "spanish"),
+    "french",
+    "german",
+    "italian",
+    "portuguese",
+    "spanish",
 ]
 BG_COLOR = "#ffca18"
 FONT_COLORS = ["#000000", "#fff"]
@@ -43,12 +44,12 @@ class StartWindow(Tk):
         for idx, language in enumerate(languages):
             new_radio = Radiobutton(
                 self,
-                text=language[0],
+                text=language.title(),
                 width=10,
                 justify="center",
                 variable=self.radio_choice,
                 command=self.start_game,
-                value=language[1],
+                value=language,
                 indicatoron=0,
                 bg="#91C2AF",
                 fg=FONT_COLORS[1],
