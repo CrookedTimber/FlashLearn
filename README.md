@@ -8,8 +8,6 @@
 - [Development Notes](#development-notes)
 - [Contact](#contact)
 
-00_job_seeking\portfolio\FlashLearn\FlashLearn\screenshots\screenshot_1.png
-
 ![Alt text](/screenshots/screenshot_1.png?raw=true "Optional Title")
 
 ## Description
